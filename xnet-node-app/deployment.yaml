@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xnet-node-app
+spec:
+  selector:
+    matchLabels:
+      app: xnet-node-app
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: xnet-node-app
+    spec:
+      containers:
+        - name: xnet-node-app
+          image: ghcr.io/nextnet-works/xnet:0.1.1
+          ports:
+            - containerPort: 26656
