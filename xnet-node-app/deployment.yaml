@@ -17,9 +17,9 @@ spec:
           image: ghcr.io/nextnet-works/xnet:0.1.1
           env:
           - name: SEEDS
-            value: "a378a00099bb4a875d8577fc7d236713d3fbaa34@54.177.136.249:26656"
+            value: "2a0c32c085713a5a2e1619cb4ab789cadbf2cdbf@54.177.136.249:26656"
           - name: PERSISTENT_PEERS
-            value: "a378a00099bb4a875d8577fc7d236713d3fbaa34@54.177.136.249:26656"
+            value: "2a0c32c085713a5a2e1619cb4ab789cadbf2cdbf@54.177.136.249:26656"
           - name: CHAIN_ID
             value: "xnet_03012023-1"
           - name: MINIMUM_GAS_PRICES
