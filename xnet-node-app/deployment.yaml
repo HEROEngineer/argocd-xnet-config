@@ -15,5 +15,20 @@ spec:
       containers:
         - name: xnet-node-app
           image: ghcr.io/nextnet-works/xnet:0.1.1
+          env:
+          - name: SEEDS
+            value: "a378a00099bb4a875d8577fc7d236713d3fbaa34@54.177.136.249:26656"
+          - name: PERSISTENT_PEERS
+            value: "a378a00099bb4a875d8577fc7d236713d3fbaa34@54.177.136.249:26656"
+          - name: CHAIN_ID
+            value: "xnet_03012023-1"
+          - name: MINIMUM_GAS_PRICES
+            value: 0.025uxnet
+          - name: PRUNING
+            value: nothing
+          - name: MONIKER
+            value: mynode
+          - name: XNETD_HOME
+            value: "/.xnetd"
           ports:
             - containerPort: 26656
