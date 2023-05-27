@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/nextnet-works/argocd-xnet-config.git
+    repoURL: https://github.com/HEROEngineer/argocd-xnet-config.git
     targetRevision: HEAD
     path: xnet-node-app
   destination:
